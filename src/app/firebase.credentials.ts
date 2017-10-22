@@ -6,3 +6,4 @@ export const FIREBASE_CREDENTIALS = {
     storageBucket: "fir-crud-abbf9.appspot.com",
     messagingSenderId: "983203791973"
   };
+//Dredentials for Petteri Vaskin´s firebase
