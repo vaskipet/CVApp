@@ -23,7 +23,7 @@ export class LoginPage {
   // this is an important parent. if the user is not loggedin then s/he can´t navigate
   loggedin = false;
 
-  constructor(private afAuth: AngularFireAuth, private navCtrl: NavController, private navParams: NavParams, private toast: ToastController) {
+  constructor(private afAuth: AngularFireAuth, private navCtrl: NavController, private toast: ToastController) {
   }
 
   async login() {
