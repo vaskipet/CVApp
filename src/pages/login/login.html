@@ -1,7 +1,7 @@
 <ion-header>
 
     <ion-navbar color="primary">
-        <ion-title>LoginPage</ion-title>
+        <ion-title>CVApp -- Petteri Vaskin</ion-title>
     </ion-navbar>
 
 </ion-header>
@@ -9,7 +9,7 @@
 
 <ion-content padding>
 
-    <img src="assets/img/logo.png" alt="" class="logo">
+    <img src="assets/img/pevalogo2.png" alt="" class="logo">
     <ion-card>
         <ion-card-content>
             <ion-item>
@@ -22,8 +22,13 @@
             </ion-item>
         </ion-card-content>
         <ion-row>
-            <button ion-button block (click)="navigateToPage('RegisterPage')">Register</button><br>
             <button ion-button block (click)="login()">Login</button>
+            <button ion-button block (click)="navigateToPage('RegisterPage')">Register</button><br>
+            <!-- <button ion-button (click)="loginWithGoogle()" *ngIf="!google.loggedin">Login Wiht Google!</button> -->
+            <button ion-button (click)="loginWithGoogle()" *ngIf="!loggedin">
+                    <ion-icon name="logo-google" item-start></ion-icon>
+                   oogle Login!
+            </button>
         </ion-row>
     </ion-card>
 

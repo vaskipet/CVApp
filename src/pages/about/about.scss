@@ -1,3 +1,17 @@
 page-about {}
 
+// adding some styling tot the image-display
+.profile-view__image-container {
+    background: rgb(153, 153, 153);
+    height: 220px;
+}
+
+.profile-view__image {
+    padding-top: 20px;
+    height: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
 // <!-- this app is done byt Petteri Vaskin -->

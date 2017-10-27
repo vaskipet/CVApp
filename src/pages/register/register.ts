@@ -15,6 +15,10 @@ export class RegisterPage {
   constructor(private afAuth: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams, private toast: ToastController) {
   }
 
+  // navigateBack(){
+  //   this.navCtrl.pop();
+  // }
+
   async register() {
     try {
       const result = await 
@@ -27,7 +31,7 @@ export class RegisterPage {
     catch(e){
       console.error(e);
       this.toast.create({
-        message: e.message,
+        message: 'Please enter you information to the fields!',
         duration: 3000
       }).present();
     }

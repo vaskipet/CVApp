@@ -7,6 +7,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   templateUrl: 'app.html'
 })
 export class MyApp {
+  // the rootpage is obviously the loginpage
   rootPage:string = 'LoginPage';
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
@@ -18,4 +19,4 @@ export class MyApp {
     });
   }
 }
-
+// application made by Petteri Vaskin

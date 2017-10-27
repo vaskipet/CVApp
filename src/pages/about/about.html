@@ -1,19 +1,49 @@
-<!--
-  Generated template for the AboutPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-    <ion-navbar>
-        <ion-title>AboutPage</ion-title>
+    <ion-navbar color="primary">
+        <ion-title>About Me</ion-title>
     </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+
+
+    <div class="profile-view__image-container">
+        <img class="profile-view__image" src="assets/img/person.png" alt="">
+    </div>
+    <!-- using cards to display most of the information -->
+    <ion-card>
+        <ion-card-header>
+            Petteri Vaskin
+        </ion-card-header>
+        <ion-card-content>
+            I am currently studying computing at Laurea University of Applied Sciences. My studies have gone very well and now I am looking for a training position in the field of Mobile Development. This application will provide information about me and my abilities
+            as a developer.
+        </ion-card-content>
+        <ion-card-content>
+            I have a lot of experience in the field of finance and accounting because I have worked in that field for the past six years. However I have always considered myself a tech-enthusiast. That is why I am currently studying a new field and want to make my
+            enthusiasm into profession.
+        </ion-card-content>
+        <ion-card-content>
+            As an employee I am very punctual and want to make sure that I undertand the given goals before I get to work. I get along with everyone and althought I am very punctual, I am also very efficient.
+        </ion-card-content>
+        <ion-card-content>
+            I am more than willing to meet face-to-face as well! Please contact me whenever best suited to you!
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Navigate through tab icons
+        </ion-card-header>
+        <!-- contact information is displayed as a message-alert to get some interactivity -->
+        <button ion-button color="primary" (click)="doAlert()">Contact information!</button>
+        <!-- this fuction doesn´t work unfortunately, instead it displays a message -->
+        <button ion-button color="danger" (click)="logoutOfGoogle()">Logout!</button>
+
+    </ion-card>
 
 </ion-content>
 <!-- this app is done byt Petteri Vaskin -->

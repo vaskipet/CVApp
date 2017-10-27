@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angu
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Account } from '../../models/account/account.interface';
 
+import firebase from 'firebase';
+
 
 @IonicPage()
 @Component({
@@ -13,18 +15,25 @@ export class LoginPage {
   
   account = {} as Account
 
+  google = {
+    name: '',
+    email:''
+  }
+
+  // this is an important parent. if the user is not loggedin then s/he can´t navigate
+  loggedin = false;
+
   constructor(private afAuth: AngularFireAuth, private navCtrl: NavController, private navParams: NavParams, private toast: ToastController) {
   }
 
   async login() {
     try {
-      const result = await this.afAuth.auth.signInWithEmailAndPassword(this.account.email, this.account.password);
-      // console.log(result);
+      //const result = ... jos ei toimi
+      await this.afAuth.auth.signInWithEmailAndPassword(this.account.email, this.account.password);
       this.toast.create({
         message: `Login Succesful!`,
         duration: 2000
       }).present();
-      // this.navCtrl.setRoot('ShoppingListPage');
       this.navCtrl.setRoot('TabsPage');
     }
     catch(e) {
@@ -36,8 +45,24 @@ export class LoginPage {
     }
   }
 
+  loginWithGoogle(){
+    this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
+    .then( res => {
+      // console.logs are for testing
+      // console.log('From --Google--');
+      // console.log(res);
+      this.loggedin = true;
+      this.google.email = res.user.email;
+      this.navCtrl.setRoot('TabsPage');
+    })
+  }
+
+
+  // navigateToPage(pageName: string) {
+  //   pageName === 'ShoppingListPage' ? this.navCtrl.setRoot(pageName) : this.navCtrl.push(pageName);
+  // }
   navigateToPage(pageName: string) {
-    pageName === 'ShoppingListPage' ? this.navCtrl.setRoot(pageName) : this.navCtrl.push(pageName);
+    pageName === 'AboutPage' ? this.navCtrl.setRoot(pageName) : this.navCtrl.push(pageName);
   }
 
 }

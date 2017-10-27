@@ -8,6 +8,7 @@ import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/dat
 
 import { MyApp } from './app.component';
 import { FIREBASE_CREDENTIALS } from './firebase.credentials';
+// this is located in the FIREBASE_CREDENTIALS.credentials.ts at the same level
 
 
 @NgModule({

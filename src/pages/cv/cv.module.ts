@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { ShoppingListPage } from './shopping-list';
+import { CvPage } from './cv';
 
 @NgModule({
   declarations: [
-    ShoppingListPage,
+    CvPage,
   ],
   imports: [
-    IonicPageModule.forChild(ShoppingListPage),
+    IonicPageModule.forChild(CvPage),
   ]
 })
-export class ShoppingListPageModule {}
+export class CvPageModule {}
 // this app is done by Petteri Vaskin
