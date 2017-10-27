@@ -11,3 +11,5 @@ import { ProjectsPage } from './projects';
   ],
 })
 export class ProjectsPageModule {}
+
+// this app was made by Petteri Vaskin

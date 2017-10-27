@@ -23,3 +23,5 @@ export class ProjectsPage {
   }
 
 }
+
+// this app was made by Petteri Vaskin

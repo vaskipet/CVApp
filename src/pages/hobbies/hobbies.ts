@@ -1,5 +1,3 @@
-// import { Component } from '@angular/core';
-// import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { IonicPage } from 'ionic-angular';
 
@@ -13,7 +11,8 @@ import { IonicPage } from 'ionic-angular';
 })
 export class HobbiesPage {
 
-  // constructor(public navCtrl: NavController, public navParams: NavParams) {
-  // }
+
 
 }
+
+// developed by Petteri Vaskin

@@ -11,3 +11,5 @@ import { TabsPage } from './tabs';
   ],
 })
 export class TabsPageModule {}
+
+// this app was made by Petteri Vaskin
