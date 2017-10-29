@@ -20,7 +20,7 @@ export class LoginPage {
     email:''
   }
 
-  // this is an important parent. if the user is not loggedin then s/he can´t navigate
+  // this is an important part. if the user is not loggedin then s/he can´t navigate
   loggedin = false;
 
   constructor(private afAuth: AngularFireAuth, private navCtrl: NavController, private toast: ToastController) {
@@ -48,19 +48,12 @@ export class LoginPage {
   loginWithGoogle(){
     this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
     .then( res => {
-      // console.logs are for testing
-      // console.log('From --Google--');
-      // console.log(res);
       this.loggedin = true;
       this.google.email = res.user.email;
       this.navCtrl.setRoot('TabsPage');
     })
   }
 
-
-  // navigateToPage(pageName: string) {
-  //   pageName === 'ShoppingListPage' ? this.navCtrl.setRoot(pageName) : this.navCtrl.push(pageName);
-  // }
   navigateToPage(pageName: string) {
     pageName === 'AboutPage' ? this.navCtrl.setRoot(pageName) : this.navCtrl.push(pageName);
   }

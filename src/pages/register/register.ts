@@ -15,13 +15,12 @@ export class RegisterPage {
   constructor(private afAuth: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams, private toast: ToastController) {
   }
 
-  // navigateBack(){
-  //   this.navCtrl.pop();
-  // }
-
+// Registration of the new user
   async register() {
     try {
+      // creating new user
         await this.afAuth.auth.createUserWithEmailAndPassword(this.account.email, this.account.password);
+        // if succesfull the user receives a message
         this.toast.create({
           message: "Account succesfully created!",
           duration: 3000
