@@ -33,4 +33,4 @@ import { FIREBASE_CREDENTIALS } from './firebase.credentials';
   ]
 })
 export class AppModule { }
-// application done byt Petteri Vaskin
+// This app was made by Petteri Vaskin 1600373

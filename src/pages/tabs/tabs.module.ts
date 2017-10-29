@@ -12,4 +12,4 @@ import { TabsPage } from './tabs';
 })
 export class TabsPageModule {}
 
-// this app was made by Petteri Vaskin
+// This app was made by Petteri Vaskin 1600373

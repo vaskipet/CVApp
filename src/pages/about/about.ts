@@ -38,4 +38,4 @@ logoutOfGoogle(){
 
 
 }
-// <!-- this app is done byt Petteri Vaskin -->
+// This app was made by Petteri Vaskin 1600373

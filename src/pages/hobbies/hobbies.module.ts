@@ -11,3 +11,4 @@ import { HobbiesPage } from './hobbies';
   ],
 })
 export class HobbiesPageModule {}
+// This app was made by Petteri Vaskin 1600373

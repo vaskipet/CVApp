@@ -24,4 +24,4 @@ export class ProjectsPage {
 
 }
 
-// this app was made by Petteri Vaskin
+// This app was made by Petteri Vaskin 1600373

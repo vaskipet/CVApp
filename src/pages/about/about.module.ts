@@ -11,4 +11,4 @@ import { AboutPage } from './about';
   ],
 })
 export class AboutPageModule {}
-// <!-- this app is done byt Petteri Vaskin -->
+// This app was made by Petteri Vaskin 1600373

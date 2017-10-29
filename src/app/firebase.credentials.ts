@@ -6,4 +6,4 @@ export const FIREBASE_CREDENTIALS = {
   storageBucket: "cvauth-31449.appspot.com",
   messagingSenderId: "1082865584001"
 };
-//Dredentials for Petteri Vaskin´s firebase
+// This app was made by Petteri Vaskin 1600373

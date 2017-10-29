@@ -14,4 +14,4 @@ import { RegisterPage } from './register';
   ],
 })
 export class RegisterPageModule {}
-// this app is done by Petteri Vaskin
+// This app was made by Petteri Vaskin 1600373

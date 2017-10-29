@@ -15,4 +15,4 @@ export class HobbiesPage {
 
 }
 
-// developed by Petteri Vaskin
+// This app was made by Petteri Vaskin 1600373

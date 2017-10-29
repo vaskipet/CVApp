@@ -13,4 +13,4 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
   ],
 })
 export class LoginPageModule {}
-// this app is done by Petteri Vaskin
+// This app was made by Petteri Vaskin 1600373

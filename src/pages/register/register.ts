@@ -37,4 +37,4 @@ export class RegisterPage {
   }
 
 }
-// this app is done by Petteri Vaskin
+// This app was made by Petteri Vaskin 1600373
