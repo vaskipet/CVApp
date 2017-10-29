@@ -34,7 +34,7 @@ export class LoginPage {
         message: `Login Succesful!`,
         duration: 2000
       }).present();
-      this.navCtrl.setRoot('TabsPage');
+      this.navCtrl.setRoot('MenuPage');
     }
     catch(e) {
       console.error(e);
@@ -50,7 +50,7 @@ export class LoginPage {
     .then( res => {
       this.loggedin = true;
       this.google.email = res.user.email;
-      this.navCtrl.setRoot('TabsPage');
+      this.navCtrl.setRoot('MenuPage');
     })
   }
 

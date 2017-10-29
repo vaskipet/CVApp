@@ -22,6 +22,7 @@ export class TabsPage {
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.myIndex = navParams.data.tabIndex || 0;
 // the logic for the tabs (links etc.)
     // this.myIndex = navParams.fata.tabIndex || 0;
     // this.tab1Root = 'AboutPage';

@@ -1,6 +1,6 @@
 <!-- The order of the tabs is here -->
 
-<ion-tabs color="primary">
+<ion-tabs [selectedIndex]="myIndex" color="primary">
     <ion-tab [root]="tab1Root" tabTitle="About" tabIcon="help"></ion-tab>
     <ion-tab [root]="tab2Root" tabTitle="CV" tabIcon="list-box"></ion-tab>
     <ion-tab [root]="tab3Root" tabTitle="Projects" tabIcon="logo-github"></ion-tab>
