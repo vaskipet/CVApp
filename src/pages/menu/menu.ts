@@ -30,6 +30,7 @@ export class MenuPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  // functionality to navigate with the menu
  openPage(page: PageInterface){
    let params = {};
    if(page.index){
@@ -42,6 +43,7 @@ export class MenuPage {
    }
 
  }
+//  when the page is activated so should the icon in the menu navigation
  isActive(page: PageInterface){
    let childNav = this.nav.getActiveChildNav();
 

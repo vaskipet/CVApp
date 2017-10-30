@@ -1,3 +1,5 @@
+// this is where you can change the configurations fo the firebase
+
 export const FIREBASE_CREDENTIALS = {
   apiKey: "AIzaSyDpMLtrt3MEw-61kJ4JGY_YZEynInTP-Wg",
   authDomain: "cvauth-31449.firebaseapp.com",

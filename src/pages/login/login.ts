@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, ToastController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { Account } from '../../models/account/account.interface';
 
@@ -36,6 +36,7 @@ export class LoginPage {
       }).present();
       this.navCtrl.setRoot('MenuPage');
     }
+    // if there is an error during logging in the user is informed
     catch(e) {
       console.error(e);
       this.toast.create({
@@ -45,11 +46,13 @@ export class LoginPage {
     }
   }
 
+  // adding the google login functionality
   loginWithGoogle(){
     this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
     .then( res => {
       this.loggedin = true;
       this.google.email = res.user.email;
+      // setting the correct rootpage so that the menu navigation works
       this.navCtrl.setRoot('MenuPage');
     })
   }

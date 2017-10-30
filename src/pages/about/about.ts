@@ -25,6 +25,7 @@ doAlert(){
   alert.present()
 }
 
+// since the logout functionality doesn´t really work it is ust a seperate button, but will try to fix this
 logoutOfGoogle(){
   // creating another alert for the user
   let alert2 = this.alertCtrl.create({
