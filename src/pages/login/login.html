@@ -22,9 +22,11 @@
             </ion-item>
         </ion-card-content>
         <ion-row>
+            <!-- button for regular logging in -->
             <button ion-button block (click)="login()">Login</button>
+            <!-- button for registering -->
             <button ion-button block (click)="navigateToPage('RegisterPage')">Register</button><br>
-            <!-- <button ion-button (click)="loginWithGoogle()" *ngIf="!google.loggedin">Login Wiht Google!</button> -->
+            <!-- button for google login -->
             <button ion-button (click)="loginWithGoogle()" *ngIf="!loggedin">
                     <ion-icon name="logo-google" item-start></ion-icon>
                    oogle Login!

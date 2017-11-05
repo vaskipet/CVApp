@@ -9,10 +9,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TabsPage {
 
-  // tab1Root: string;
-  // tab2Root: string;
-  // tab3Root: string;
-  // tab4Root: string;
+
   tab1Root='AboutPage';
   tab2Root='CvPage';
   tab3Root='ProjectsPage';
@@ -24,11 +21,7 @@ export class TabsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.myIndex = navParams.data.tabIndex || 0;
 // the logic for the tabs (links etc.)
-    // this.myIndex = navParams.fata.tabIndex || 0;
-    // this.tab1Root = 'AboutPage';
-    // this.tab2Root = 'CvPage';
-    // this.tab3Root = 'ProjectsPage';
-    // this.tab4Root = 'HobbiesPage';
+
   }
 
 

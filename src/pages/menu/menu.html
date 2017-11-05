@@ -11,6 +11,7 @@
     <!-- menu shows a list-navigation and goes throgh them in a loop -->
     <ion-content>
         <ion-list>
+            <!-- looping the array with *ngFor -->
             <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
               <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
               {{p.title}}

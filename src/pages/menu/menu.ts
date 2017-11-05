@@ -20,6 +20,7 @@ export class MenuPage {
 
   @ViewChild(Nav) nav: Nav;
 
+  // creating the page interface
   pages: PageInterface[] = [
     {title: 'About', pageName: 'TabsPage', tabComponent: 'AboutPage', index: 0, icon: 'help'},
     {title: 'CV', pageName: 'TabsPage', tabComponent: 'CvPage', index: 1, icon: 'list-box'},

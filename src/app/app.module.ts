@@ -18,6 +18,7 @@ import { FIREBASE_CREDENTIALS } from './firebase.credentials';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    // making sure that the angularfiremodule works correctly throu initializeapp()
     AngularFireModule.initializeApp(FIREBASE_CREDENTIALS),
     AngularFireDatabaseModule
   ],

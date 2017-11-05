@@ -13,6 +13,8 @@ import firebase from 'firebase';
 })
 export class LoginPage {
   
+  // interfaces account and google could have been exported, but since there are only two and they are not required anywhere else
+// this should be okay
   account = {} as Account
 
   google = {
@@ -28,7 +30,6 @@ export class LoginPage {
 
   async login() {
     try {
-      //const result = ... jos ei toimi
       await this.afAuth.auth.signInWithEmailAndPassword(this.account.email, this.account.password);
       this.toast.create({
         message: `Login Succesful!`,
@@ -56,7 +57,7 @@ export class LoginPage {
       this.navCtrl.setRoot('MenuPage');
     })
   }
-
+// funcitonality for registerpage navigation
   navigateToPage(pageName: string) {
     pageName === 'AboutPage' ? this.navCtrl.setRoot(pageName) : this.navCtrl.push(pageName);
   }
